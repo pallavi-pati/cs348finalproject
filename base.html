@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>10 Day To-do List</title>
+</head>
+
+<body>
+    <div>
+        <h1 onclick="location.href='{% url "index" %}'">
+            10 Day To-do List
+        </h1>
+    </div>
+    <div>
+        {% block content %}
+        Different html for each page
+        {% endblock %}
+    </div>
+</body>
+</html>
